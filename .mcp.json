@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "dynamoi": {
+      "type": "http",
+      "url": "https://dynamoi.com/mcp/directory"
+    }
+  }
+}

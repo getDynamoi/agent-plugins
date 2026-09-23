@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "dynamoi",
+  "displayName": "Dynamoi",
+  "version": "1.0.0",
+  "description": "Music promotion for artists and labels: free Spotify Smart Links, campaign status and analytics, and music-distribution applications through the hosted Dynamoi MCP server.",
+  "author": { "name": "Dynamoi", "email": "support@dynamoi.com", "url": "https://dynamoi.com" },
+  "homepage": "https://dynamoi.com/docs/mcp-server",
+  "repository": "https://github.com/getDynamoi/agent-plugins",
+  "license": "MIT",
+  "keywords": ["music", "music-marketing", "smart-links", "spotify", "youtube", "music-distribution", "mcp"],
+  "mcpServers": "./.mcp.json"
+}

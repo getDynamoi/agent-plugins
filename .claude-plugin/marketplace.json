@@ -1,0 +1,18 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "dynamoi",
+  "owner": { "name": "Dynamoi", "email": "support@dynamoi.com", "url": "https://dynamoi.com" },
+  "description": "Official Dynamoi plugins for Claude Code and Claude Cowork.",
+  "plugins": [
+    {
+      "name": "dynamoi",
+      "displayName": "Dynamoi",
+      "source": "./",
+      "description": "Music promotion for artists and labels: free Spotify Smart Links, campaign status and analytics, and music-distribution applications.",
+      "category": "productivity",
+      "tags": ["music", "marketing", "smart-links", "distribution"],
+      "homepage": "https://dynamoi.com/docs/mcp-server",
+      "license": "MIT"
+    }
+  ]
+}
