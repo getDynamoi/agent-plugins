@@ -1,7 +1,7 @@
 {
   "name": "dynamoi",
   "version": "1.0.0",
-  "description": "Music promotion for artists and labels: free Spotify Smart Links, campaign status and analytics, and music-distribution applications via the hosted Dynamoi MCP server.",
+  "description": "Music marketing for AI agents: free Smart Links, promotion campaigns, analytics, and distribution.",
   "mcpServers": {
     "dynamoi": {
       "httpUrl": "https://dynamoi.com/mcp",

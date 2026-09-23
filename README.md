@@ -1,6 +1,6 @@
-# Dynamoi agent plugins
+# Dynamoi Agent Plugins
 
-Official Dynamoi plugins for **Claude** (Claude Code and Claude Cowork) and **Gemini CLI**.
+**Music marketing for AI agents.** Official Dynamoi plugins for **Claude** (Claude Code and Claude Cowork) and **Gemini CLI**.
 
 [Dynamoi](https://dynamoi.com) is a music marketing platform for artists, labels, and managers. These plugins connect your agent to Dynamoi's hosted MCP server. They also include skills that teach the agent to:
 
