@@ -6,19 +6,20 @@
     "email": "support@dynamoi.com",
     "url": "https://dynamoi.com"
   },
-  "description": "Official Dynamoi plugins for Claude Code and Claude Cowork. Music marketing for AI agents.",
+  "description": "Official Dynamoi plugins for Claude Code and Claude Cowork. Music promotion and distribution, built for AI agents.",
   "plugins": [
     {
       "name": "dynamoi",
       "displayName": "Dynamoi",
       "source": "./",
-      "description": "Music marketing for AI agents: free Smart Links, promotion campaigns, analytics, and distribution.",
+      "description": "Music promotion and distribution, built for AI agents. Free Smart Links, Spotify and YouTube campaign results, and optional distribution applications.",
       "category": "productivity",
       "tags": [
-        "music",
-        "marketing",
+        "music-promotion",
         "smart-links",
-        "distribution"
+        "spotify",
+        "youtube",
+        "music-distribution"
       ],
       "homepage": "https://dynamoi.com/docs/mcp-server",
       "license": "MIT"

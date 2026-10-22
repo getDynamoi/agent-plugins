@@ -1,67 +1,88 @@
 # Dynamoi Agent Plugins
 
-**Music marketing for AI agents.** Official Dynamoi plugins for **Claude** (Claude Code and Claude Cowork) and **Gemini CLI**.
+**Music promotion and distribution, built for AI agents.**
 
-[Dynamoi](https://dynamoi.com) is a music marketing platform for artists, labels, and managers. These plugins connect your agent to Dynamoi's hosted MCP server. They also include skills that teach the agent to:
+Official [Dynamoi](https://dynamoi.com) plugins for **Claude Code**, **Claude
+Cowork** and **Gemini CLI**. Each one connects your agent to Dynamoi's hosted
+MCP server and adds skills that teach it how to promote music well: build
+free Smart Links, review Spotify and YouTube campaign results, check platform
+connections, and, if the artist wants it, apply for distribution. Dynamoi
+works with any distributor.
 
-- create free Spotify Smart Links and artist hubs
-- review campaign performance
-- check platform connections
-- handle music-distribution applications
+## Install
 
-## Claude
+<details open>
+<summary><b>Claude Code and Claude Cowork</b></summary>
 
 ```text
 /plugin marketplace add getDynamoi/agent-plugins
 /plugin install dynamoi@dynamoi
 ```
 
-Then run `/mcp`, choose **dynamoi**, and sign in to Dynamoi in your browser.
+Run `/mcp`, choose **dynamoi**, and sign in to Dynamoi in your browser.
 
-The Claude plugin connects to `https://dynamoi.com/mcp/directory`, the review-safe tool set:
-
-- Smart Links
-- campaign and analytics reads
-- platform status
-- distribution applications
-
-Paid campaign launches, budget changes, and billing stay in the [Dynamoi dashboard](https://dynamoi.com/dashboard). For the full tool set in Claude Code, including campaign launch and budget changes, add the server directly instead:
+The plugin connects to `https://dynamoi.com/mcp/directory`, the review-safe
+tool set: Smart Links, campaign and analytics reads, platform status and
+distribution applications. Campaign launches, budget changes and billing need
+the full server, which you add in Claude Code with:
 
 ```text
 claude mcp add --transport http dynamoi https://dynamoi.com/mcp
 ```
 
-## Gemini CLI
+</details>
+
+<details open>
+<summary><b>Gemini CLI</b></summary>
 
 ```text
 gemini extensions install https://github.com/getDynamoi/agent-plugins --auto-update
 ```
 
-Then run `/mcp auth dynamoi` and sign in to Dynamoi in your browser. The Gemini extension connects to the full server at `https://dynamoi.com/mcp`.
+Run `/mcp auth dynamoi` and sign in. The extension connects to the full server
+at `https://dynamoi.com/mcp`.
+
+</details>
+
+Using Codex, Cursor, VS Code, ChatGPT or another client? Connect the server
+directly with the [MCP server instructions](https://github.com/getDynamoi/dynamoi#connect).
+
+## Try asking
+
+> Make a Smart Link for this Spotify single and give me the link.
+
+> How are my campaigns doing this month? Anything that needs attention?
+
+> Is my Meta and YouTube connection set up correctly?
+
+> Am I eligible for Dynamoi distribution yet? What is still missing?
 
 ## Skills
 
-| Skill | What it does |
-|---|---|
-| `dynamoi-smart-links` | Create, inspect, and update free Smart Links and artist hubs |
-| `dynamoi-campaign-review` | Report campaign status, analytics, and platform connection health |
-| `dynamoi-distribution` | Check distribution eligibility and submit applications, only with your explicit confirmation |
+| Skill | Use it to |
+| --- | --- |
+| `dynamoi-smart-links` | Create, inspect and update free Smart Links and artist hubs |
+| `dynamoi-campaign-review` | Report campaign status, analytics and platform connection health |
+| `dynamoi-distribution` | Check optional distribution eligibility and apply, only after you confirm |
 
-## How it works
+## Safety
 
-- **Server:** `https://dynamoi.com/mcp`, supporting MCP protocol 2026-07-28 and 2025-era clients.
-- **Sign-in:** OAuth 2.1 with PKCE. Client ID Metadata Documents and Dynamic Client Registration are both supported.
-- **Payments:** agents never receive payment credentials.
-- **Documentation:** https://dynamoi.com/docs/mcp-server
-- **Package and source:** [`@dynamoi/mcp`](https://github.com/getDynamoi/mcp)
+- Sign-in is OAuth 2.1 in your browser. There are no API keys to paste.
+- Agents never receive payment details, and paid actions need the artist's
+  explicit consent.
+- The skills tell the agent to report only what Dynamoi returns, never
+  invented results or eligibility numbers.
 
 ## Support
 
-- Help center: https://dynamoi.com/support
-- Email: support@dynamoi.com (we reply within 24 hours)
-- Privacy policy: https://dynamoi.com/privacy-policy
-- Terms of service: https://dynamoi.com/terms-of-service
+- Docs: [dynamoi.com/docs/mcp-server](https://dynamoi.com/docs/mcp-server)
+- Help: [dynamoi.com/support](https://dynamoi.com/support) or
+  support@dynamoi.com (we reply within 24 hours)
+- [Privacy policy](https://dynamoi.com/privacy-policy) and
+  [terms of service](https://dynamoi.com/terms-of-service)
 
-## License
+MIT licensed. See [LICENSE](./LICENSE).
 
-MIT
+---
+
+**Part of Dynamoi** · [MCP server](https://github.com/getDynamoi/dynamoi) · [CLI](https://github.com/getDynamoi/dynamoi/tree/main/cli) · [Agent plugins](https://github.com/getDynamoi/agent-plugins) · [Homebrew tap](https://github.com/getDynamoi/homebrew-tap) · [Chrome extension](https://github.com/getDynamoi/browser-extension) · [dynamoi.com](https://dynamoi.com) · [Docs](https://dynamoi.com/docs) · [Support](https://dynamoi.com/support)

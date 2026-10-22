@@ -1,7 +1,7 @@
 {
   "name": "dynamoi",
-  "version": "1.0.0",
-  "description": "Music marketing for AI agents: free Smart Links, promotion campaigns, analytics, and distribution.",
+  "version": "1.0.1",
+  "description": "Music promotion and distribution, built for AI agents. Free Smart Links, Spotify and YouTube campaign results, and optional distribution applications.",
   "mcpServers": {
     "dynamoi": {
       "httpUrl": "https://dynamoi.com/mcp",

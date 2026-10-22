@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "dynamoi",
   "displayName": "Dynamoi",
-  "version": "1.0.0",
-  "description": "Music marketing for AI agents: free Smart Links, promotion campaigns, analytics, and distribution.",
+  "version": "1.0.1",
+  "description": "Music promotion and distribution, built for AI agents. Free Smart Links, Spotify and YouTube campaign results, and optional distribution applications.",
   "author": {
     "name": "Dynamoi",
     "email": "support@dynamoi.com",
@@ -13,11 +13,11 @@
   "repository": "https://github.com/getDynamoi/agent-plugins",
   "license": "MIT",
   "keywords": [
-    "music",
-    "music-marketing",
+    "music-promotion",
+    "spotify-promotion",
+    "youtube-promotion",
     "smart-links",
-    "spotify",
-    "youtube",
+    "music-analytics",
     "music-distribution",
     "mcp"
   ],

@@ -5,7 +5,7 @@ description: Create, inspect, and update free Dynamoi Smart Links for a Spotify 
 
 # Dynamoi Smart Links
 
-Smart Links are free public landing pages on play.dynamoi.com. There is no per-link fee and no subscription gate.
+Smart Links are free public landing pages on play.dynamoi.com. There is no per-link charge and no subscription gate.
 
 1. **Identify the artist.** Call `dynamoi_list_artists` (or `dynamoi_search`) unless the user already named an artist Dynamoi returned earlier.
 2. **Create a link.**

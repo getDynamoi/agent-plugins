@@ -5,6 +5,8 @@ description: Check an artist's eligibility for Dynamoi music distribution and, o
 
 # Dynamoi distribution applications
 
+Distribution is optional. Campaigns, Smart Links and analytics work with any distributor, so never suggest the artist must switch. Below the bar, report progress against each requirement and mention that Smart Campaigns can build listeners, without promising when or whether the bar is reached.
+
 1. Resolve the artist with `dynamoi_list_artists`.
 2. Call `dynamoi_get_distribution_application`. Report each of the five requirements with its current evidence and threshold exactly as returned, plus any existing application status.
 3. Eligibility means the artist can apply. It does not guarantee approval.
