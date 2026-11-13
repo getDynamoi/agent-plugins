@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "dynamoi",
   "displayName": "Dynamoi",
-  "version": "1.0.1",
-  "description": "Music promotion and distribution, built for AI agents. Free Smart Links, Spotify and YouTube campaign results, and optional distribution applications.",
+  "version": "1.1.0",
+  "description": "Music promotion and distribution, built for AI agents. Promote a song on Spotify or promote a video on YouTube, check campaign results, and make a free smart link for music or a free link in bio for musicians. Distribution is optional.",
   "author": {
     "name": "Dynamoi",
     "email": "support@dynamoi.com",

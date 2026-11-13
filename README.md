@@ -4,8 +4,9 @@
 
 Official [Dynamoi](https://dynamoi.com) plugins for **Claude Code**, **Claude
 Cowork** and **Gemini CLI**. Each one connects your agent to Dynamoi's hosted
-MCP server and adds skills that teach it how to promote music well: build
-free Smart Links, review Spotify and YouTube campaign results, check platform
+MCP server and adds skills that teach it how to promote a song on Spotify or
+promote a video on YouTube: make a free smart link for music or a free link in
+bio for musicians, review Spotify and YouTube campaign results, check platform
 connections, and, if the artist wants it, apply for distribution. Dynamoi
 works with any distributor.
 
@@ -59,11 +60,20 @@ directly with the [MCP server instructions](https://github.com/getDynamoi/dynamo
 
 ## Skills
 
+Install the skills with `npx skills add getDynamoi/agent-plugins`. In Claude,
+invoke them as `/dynamoi:music-promotion`, `/dynamoi:smart-links`,
+`/dynamoi:campaign-review`, or `/dynamoi:distribution`.
+
+All skills are generated from `skills/` in the Dynamoi source repository.
+Its target manifest owns published names and host wording; repository validation
+rejects hand edits to any generated bundle.
+
 | Skill | Use it to |
 | --- | --- |
-| `dynamoi-smart-links` | Create, inspect and update free Smart Links and artist hubs |
-| `dynamoi-campaign-review` | Report campaign status, analytics and platform connection health |
-| `dynamoi-distribution` | Check optional distribution eligibility and apply, only after you confirm |
+| `music-promotion` | Promote music, make Smart Links, and manage Dynamoi account workflows |
+| `smart-links` | Create, inspect and update free Smart Links and artist hubs |
+| `campaign-review` | Report campaign status, analytics and platform connection health |
+| `distribution` | Check optional distribution eligibility and apply, only after you confirm |
 
 ## Safety
 
