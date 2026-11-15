@@ -59,6 +59,13 @@ bridge, which needs Node.js 20.18.1 or newer and stores its sign-in in
 `~/.mcp-auth`. Hermes asks for approval before calls that can change your
 account, unless you have already approved that tool for the session or always.
 
+Hermes waits about a minute for that first sign-in. If it times out, sign in
+once from a terminal, then run `/reload-mcp`:
+
+```text
+npx -y -p mcp-remote@0.1.49 mcp-remote-client "https://dynamoi.com/mcp/directory?auth=required" --transport http-only --static-oauth-client-info '{"client_id":"https://dynamoi.com/api/oauth/clients/hermes"}'
+```
+
 </details>
 
 Using Codex, Cursor, VS Code, ChatGPT or another client? Connect the server

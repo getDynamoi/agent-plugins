@@ -10,8 +10,8 @@
         "https://dynamoi.com/mcp/directory?auth=required",
         "--transport",
         "http-only",
-        "--static-oauth-client-metadata",
-        "{\"client_name\":\"Hermes Agent (Dynamoi)\",\"token_endpoint_auth_method\":\"none\",\"grant_types\":[\"authorization_code\",\"refresh_token\"],\"response_types\":[\"code\"]}"
+        "--static-oauth-client-info",
+        "{\"client_id\":\"https://dynamoi.com/api/oauth/clients/hermes\"}"
       ]
     }
   }
