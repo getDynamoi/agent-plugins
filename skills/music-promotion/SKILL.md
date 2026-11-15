@@ -1,8 +1,6 @@
 ---
 name: music-promotion
 description: Use Dynamoi to promote a song on Spotify or promote a video on YouTube, make a free smart link for music or a free link in bio for musicians, and inspect or manage campaigns, artist analytics, platform connections, or distribution applications. Trigger for requests about the user's Dynamoi account or an explicit Dynamoi action; general music and marketing advice needs no account tools.
-homepage: https://dynamoi.com
-metadata: {"openclaw":{"emoji":"🎵","homepage":"https://dynamoi.com"}}
 ---
 
 # Dynamoi: music promotion
@@ -29,6 +27,7 @@ Sign up free at https://dynamoi.com/signup if needed. Use this client's Dynamoi 
 
 - **Claude Code/Cowork:** install the Dynamoi plugin, then run `/mcp`, choose **dynamoi**, and sign in in the browser. The plugin uses https://dynamoi.com/mcp/directory.
 - **Gemini CLI:** install the Dynamoi extension, then run `/mcp auth dynamoi` and sign in in the browser. The extension uses https://dynamoi.com/mcp.
+- **Hermes Agent:** install and enable the Dynamoi plugin; the first Dynamoi connection opens the browser sign-in. The plugin uses https://dynamoi.com/mcp/directory and Hermes asks for approval before write-capable calls unless the user has already approved that tool.
 - If the connection is not installed, follow https://dynamoi.com/docs/mcp-server for this client.
 
 There is no API key; OAuth sign-in decides which artists the agent can reach. Never ask for a password, token or card number. Use only tools advertised by the connected host, with the host's tool naming. The tool IDs below identify the Dynamoi operations; do not assume an OpenClaw prefix.

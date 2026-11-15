@@ -3,7 +3,7 @@
 **Music promotion and distribution, built for AI agents.**
 
 Official [Dynamoi](https://dynamoi.com) plugins for **Claude Code**, **Claude
-Cowork** and **Gemini CLI**. Each one connects your agent to Dynamoi's hosted
+Cowork**, **Gemini CLI** and **Hermes Agent**. Each one connects your agent to Dynamoi's hosted
 MCP server and adds skills that teach it how to promote a song on Spotify or
 promote a video on YouTube: make a free smart link for music or a free link in
 bio for musicians, review Spotify and YouTube campaign results, check platform
@@ -42,6 +42,22 @@ gemini extensions install https://github.com/getDynamoi/agent-plugins --auto-upd
 
 Run `/mcp auth dynamoi` and sign in. The extension connects to the full server
 at `https://dynamoi.com/mcp`.
+
+</details>
+
+<details open>
+<summary><b>Hermes Agent</b></summary>
+
+```text
+hermes plugins install getDynamoi/agent-plugins --enable
+```
+
+Start a new session or run `/reload-mcp`. The first Dynamoi connection opens
+the browser sign-in. The plugin connects to the review-safe tool set at
+`https://dynamoi.com/mcp/directory` through the pinned `mcp-remote@0.1.49`
+bridge, which needs Node.js 20.18.1 or newer and stores its sign-in in
+`~/.mcp-auth`. Hermes asks for approval before calls that can change your
+account, unless you have already approved that tool for the session or always.
 
 </details>
 
