@@ -22,10 +22,8 @@ works with any distributor.
 
 Run `/mcp`, choose **dynamoi**, and sign in to Dynamoi in your browser.
 
-The plugin connects to `https://dynamoi.com/mcp/directory`, the review-safe
-tool set: Smart Links, campaign and analytics reads, platform status and
-distribution applications. Campaign launches need
-the full server, which you add in Claude Code with:
+The plugin connects to `https://dynamoi.com/mcp/directory`. Check the connected
+server's tool list for available actions. Add the full endpoint separately in Claude Code.
 
 ```text
 claude mcp add --transport http dynamoi https://dynamoi.com/mcp
